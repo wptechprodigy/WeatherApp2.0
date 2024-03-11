@@ -7,18 +7,6 @@
 
 import UIKit
 
-struct WeatherInfo {
-    let description: String
-    let temp: String
-}
-
-extension WeatherInfo {
-    init(with weatherReport: WeatherReport) {
-        self.description = weatherReport.weather[0].description
-        self.temp = weatherReport.main.temp.toString
-    }
-}
-
 class DetailsViewController: UIViewController {
     
     // MARK: - Outlets

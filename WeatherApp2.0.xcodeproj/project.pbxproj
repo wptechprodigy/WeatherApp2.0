@@ -29,6 +29,7 @@
 		045E85782B9F522A0050A10A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E854A2B9F4A730050A10A /* LaunchScreen.storyboard */; };
 		04DC09672B9F7639008720BE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09662B9F7639008720BE /* DetailsViewController.swift */; };
 		04DC09692B9F7928008720BE /* Double+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09682B9F7928008720BE /* Double+ToString.swift */; };
+		04DC096B2B9F86A8008720BE /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC096A2B9F86A8008720BE /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		045E85702B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardIdentifier.swift"; sourceTree = "<group>"; };
 		04DC09662B9F7639008720BE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		04DC09682B9F7928008720BE /* Double+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ToString.swift"; sourceTree = "<group>"; };
+		04DC096A2B9F86A8008720BE /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				045E85562B9F4AD30050A10A /* WeatherReport.swift */,
+				04DC096A2B9F86A8008720BE /* WeatherInfo.swift */,
 			);
 			path = weatherReport;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				045E85712B9F4BFB0050A10A /* UIStoryboard+Main.swift in Sources */,
 				045E85512B9F4ABA0050A10A /* NetworkError.swift in Sources */,
 				045E85532B9F4ABA0050A10A /* APIManager.swift in Sources */,
+				04DC096B2B9F86A8008720BE /* WeatherInfo.swift in Sources */,
 				04DC09692B9F7928008720BE /* Double+ToString.swift in Sources */,
 				045E85672B9F4B5A0050A10A /* RequestProtocol.swift in Sources */,
 			);
