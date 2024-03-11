@@ -22,13 +22,13 @@ class HomeViewController: UIViewController {
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
+        self.viewModel = HomeViewModel()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.viewModel = HomeViewModel()
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     // MARK: - IB Actions
