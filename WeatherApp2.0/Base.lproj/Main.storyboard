@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q0k-nD-bD0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FavoritesViewController-->
+        <scene sceneID="h2P-DR-qTK">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" title="FavoritesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yvb-Jg-CnW" customClass="FavoritesViewController" customModule="WeatherApp2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hok-EK-jMv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fQf-Zx-hAb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorites" id="swk-UD-L2Y"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymh-CW-kQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="444"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="dXk-7E-AUu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lgg-gQ-yGm" customClass="HomeViewController" customModule="WeatherApp2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPu-sc-H5I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YXD-GQ-N7j">
+                                <rect key="frame" x="16" y="175" width="361" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arR-PI-Wca">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="32"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your city name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-Mn-k7Y">
+                                        <rect key="frame" x="77.333333333333343" y="0.0" width="283.66666666666663" height="32"/>
+                                        <color key="textColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="TfY-0H-2Je"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-yB-R6R">
+                                <rect key="frame" x="16" y="227" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LAD-Ci-Ldl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Weather Info" imagePadding="10">
+                                    <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="small"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getWeatherInfo:" destination="Lgg-gQ-yGm" eventType="touchUpInside" id="OQY-FW-eiv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tor-TD-sEe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eQU-yB-R6R" firstAttribute="top" secondItem="YXD-GQ-N7j" secondAttribute="bottom" constant="20" id="0tg-Pp-kMs"/>
+                            <constraint firstItem="tor-TD-sEe" firstAttribute="trailing" secondItem="eQU-yB-R6R" secondAttribute="trailing" constant="16" id="5jf-kL-p3c"/>
+                            <constraint firstItem="eQU-yB-R6R" firstAttribute="leading" secondItem="tor-TD-sEe" secondAttribute="leading" constant="16" id="CfZ-ru-sWq"/>
+                            <constraint firstItem="YXD-GQ-N7j" firstAttribute="top" secondItem="tor-TD-sEe" secondAttribute="top" constant="20" id="Pca-9n-kgE"/>
+                            <constraint firstItem="YXD-GQ-N7j" firstAttribute="leading" secondItem="tor-TD-sEe" secondAttribute="leading" constant="16" id="ar8-2K-ZAr"/>
+                            <constraint firstItem="tor-TD-sEe" firstAttribute="trailing" secondItem="YXD-GQ-N7j" secondAttribute="trailing" constant="16" id="g2z-fW-2Iq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="NiI-a1-wMK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="getWeatherInfoButton" destination="eQU-yB-R6R" id="bG5-hS-iS7"/>
+                        <outlet property="locationTextField" destination="IyL-Mn-k7Y" id="sbq-kB-bVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOY-bo-zsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="-249.29577464788733"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1W7-8r-Dn9">
+            <objects>
+                <tabBarController id="Q0k-nD-bD0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bmC-zP-R5x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f1l-qF-gly" kind="relationship" relationship="viewControllers" id="9jV-Nt-QzI"/>
+                        <segue destination="dya-Pn-t8p" kind="relationship" relationship="viewControllers" id="35a-FB-NTK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLa-JX-d6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818" y="54"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="lhI-d9-sjp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f1l-qF-gly" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="gbg-pe-Qph">
+                        <color key="badgeColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="47N-Zq-rpu">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lgg-gQ-yGm" kind="relationship" relationship="rootViewController" id="gm5-To-C5W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJY-9I-zz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.786259541984734" y="-249.29577464788733"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eIM-eo-mpj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dya-Pn-t8p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="favorites" id="tXw-8V-N7L">
+                        <color key="badgeColor" red="0.59607843140000005" green="0.047058823530000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Fuy-5H-6Bj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yvb-Jg-CnW" kind="relationship" relationship="rootViewController" id="p4f-ce-kT0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOz-4C-hYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="445"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
