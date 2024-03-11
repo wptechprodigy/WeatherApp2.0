@@ -25,7 +25,7 @@ class HomeViewModel {
     // MARK: -
     
     func getWeather(for city: String) async {
-        print(city)
+        
         do {
             let response: WeatherReport = try await requestManager
                 .perform(
