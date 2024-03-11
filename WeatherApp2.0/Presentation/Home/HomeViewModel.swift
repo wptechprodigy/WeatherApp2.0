@@ -14,12 +14,15 @@ class HomeViewModel {
     private let requestManager: RequestManagerProtocol
     var weatherReport: WeatherReport?
     
+    var confirmer: String?
+    
     // MARK: - Initializer
     
     init(
         requestManager: RequestManagerProtocol = RequestManager()
     ) {
         self.requestManager = requestManager
+        self.confirmer = "Created"
     }
     
     // MARK: -
@@ -32,9 +35,9 @@ class HomeViewModel {
                     WeatherRequest
                         .getWeatherInfo(city: city))
             
-            self.weatherReport = response
             DispatchQueue.main.async {
                 print(response)
+                self.weatherReport = response
             }
         } catch {
             DispatchQueue.main.async {
