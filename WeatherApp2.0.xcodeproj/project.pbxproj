@@ -27,6 +27,8 @@
 		045E85762B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E85702B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift */; };
 		045E85772B9F52220050A10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E853D2B9F49120050A10A /* Main.storyboard */; };
 		045E85782B9F522A0050A10A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E854A2B9F4A730050A10A /* LaunchScreen.storyboard */; };
+		04DC09672B9F7639008720BE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09662B9F7639008720BE /* DetailsViewController.swift */; };
+		04DC09692B9F7928008720BE /* Double+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09682B9F7928008720BE /* Double+ToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		045E856B2B9F4BFB0050A10A /* UIStoryboard+Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Main.swift"; sourceTree = "<group>"; };
 		045E856D2B9F4BFB0050A10A /* UIColor+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		045E85702B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardIdentifier.swift"; sourceTree = "<group>"; };
+		04DC09662B9F7639008720BE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		04DC09682B9F7928008720BE /* Double+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		045E85402B9F494A0050A10A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				04DC09652B9F7616008720BE /* Details */,
 				045E85422B9F495B0050A10A /* Favorites */,
 				045E85412B9F49560050A10A /* Home */,
 			);
@@ -238,8 +243,17 @@
 				045E856B2B9F4BFB0050A10A /* UIStoryboard+Main.swift */,
 				045E856D2B9F4BFB0050A10A /* UIColor+Custom.swift */,
 				045E85702B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift */,
+				04DC09682B9F7928008720BE /* Double+ToString.swift */,
 			);
 			path = "UIKit Extensions";
+			sourceTree = "<group>";
+		};
+		04DC09652B9F7616008720BE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				04DC09662B9F7639008720BE /* DetailsViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,12 +366,14 @@
 				045E855D2B9F4B250050A10A /* HomeViewController.swift in Sources */,
 				045E85732B9F4BFB0050A10A /* UIColor+Custom.swift in Sources */,
 				045E85522B9F4ABA0050A10A /* RequestManager.swift in Sources */,
+				04DC09672B9F7639008720BE /* DetailsViewController.swift in Sources */,
 				045E85652B9F4B5A0050A10A /* APIConstant.swift in Sources */,
 				045E85762B9F4BFB0050A10A /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				045E850D2B9F48710050A10A /* SceneDelegate.swift in Sources */,
 				045E85712B9F4BFB0050A10A /* UIStoryboard+Main.swift in Sources */,
 				045E85512B9F4ABA0050A10A /* NetworkError.swift in Sources */,
 				045E85532B9F4ABA0050A10A /* APIManager.swift in Sources */,
+				04DC09692B9F7928008720BE /* Double+ToString.swift in Sources */,
 				045E85672B9F4B5A0050A10A /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

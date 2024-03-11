@@ -12,9 +12,7 @@ class HomeViewModel {
     // MARK: - Dependencies
 
     private let requestManager: RequestManagerProtocol
-    var weatherReport: WeatherReport?
-    
-    var confirmer: String?
+    var weatherReport: WeatherInfo?
     
     // MARK: - Initializer
     
@@ -22,7 +20,6 @@ class HomeViewModel {
         requestManager: RequestManagerProtocol = RequestManager()
     ) {
         self.requestManager = requestManager
-        self.confirmer = "Created"
     }
     
     // MARK: -
@@ -36,12 +33,11 @@ class HomeViewModel {
                         .getWeatherInfo(city: city))
             
             DispatchQueue.main.async {
-                print(response)
-                self.weatherReport = response
+                self.weatherReport = .init(with: response)
             }
-        } catch {
+        } catch let error {
             DispatchQueue.main.async {
-                print("Error occured!")
+                print(error.localizedDescription)
             }
         }
     }

@@ -8,15 +8,11 @@
 import Foundation
 
 struct WeatherReport: Decodable {
-    let weather: Weather
+    let weather: [Weather]
     let main: MainWD
 }
 
 struct Weather: Decodable {
-    let info: [Description]
-}
-
-struct Description: Decodable {
     let description: String
 }
 

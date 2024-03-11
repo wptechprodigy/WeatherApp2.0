@@ -7,23 +7,47 @@
 
 import UIKit
 
+struct WeatherInfo {
+    let description: String
+    let temp: String
+}
+
+extension WeatherInfo {
+    init(with weatherReport: WeatherReport) {
+        self.description = weatherReport.weather[0].description
+        self.temp = weatherReport.main.temp.toString
+    }
+}
+
 class DetailsViewController: UIViewController {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var tempInfoLabel: UILabel!
+    
+    var weatherDescription: String!
+    var temp: String!
+
+    // MARK: - Initializers
+    
+    internal static func instantiate(with weatherInfo: WeatherInfo) -> DetailsViewController {
+
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        
+        vc.weatherDescription = weatherInfo.description
+        vc.temp = weatherInfo.temp
+        return vc
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        descriptionLabel.text = weatherDescription.description.capitalized
+        tempInfoLabel.text = temp
     }
-    */
-
 }
