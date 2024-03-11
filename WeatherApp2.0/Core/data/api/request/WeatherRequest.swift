@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct City {
-    let name: String
-}
-
 enum WeatherRequest: RequestProtocol {
     
     case getWeatherInfo(city: String)
@@ -34,14 +30,14 @@ enum WeatherRequest: RequestProtocol {
     
     var headers: [String : String] {
         switch self {
-        case .getWeatherInfo(let city):
+        case .getWeatherInfo(city: _):
             return [:]
         }
     }
     
     var requestType: RequestType {
         switch self {
-        case .getWeatherInfo(let city):
+        case .getWeatherInfo(city: _):
             return .GET
         }
     }
