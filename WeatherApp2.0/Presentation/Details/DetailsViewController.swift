@@ -21,7 +21,7 @@ class DetailsViewController: UIViewController {
     
     internal static func instantiate(with weatherInfo: WeatherInfo) -> DetailsViewController {
 
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DetailsViewController.storyboardIdentifier) as! DetailsViewController
         
         vc.weatherDescription = weatherInfo.description
         vc.temp = weatherInfo.temp
