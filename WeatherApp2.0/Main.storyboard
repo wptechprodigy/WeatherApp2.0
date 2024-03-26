@@ -96,7 +96,7 @@
                     <connections>
                         <outlet property="getWeatherInfoButton" destination="eQU-yB-R6R" id="bG5-hS-iS7"/>
                         <outlet property="loader" destination="PCE-98-ic5" id="luy-E4-dLd"/>
-                        <outlet property="locationTextField" destination="IyL-Mn-k7Y" id="sbq-kB-bVT"/>
+                        <outlet property="locationTextField" destination="IyL-Mn-k7Y" id="BFe-OY-bIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOY-bo-zsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

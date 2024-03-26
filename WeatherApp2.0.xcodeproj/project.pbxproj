@@ -30,6 +30,7 @@
 		04C0D33A2BB18EF50058D943 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0D3392BB18EF50058D943 /* main.swift */; };
 		04C0D33D2BB1900E0058D943 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0D33C2BB1900E0058D943 /* TestingAppDelegate.swift */; };
 		04C0D33F2BB190DC0058D943 /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0D33E2BB190DC0058D943 /* AppLaunchTests.swift */; };
+		04C0D3462BB198060058D943 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0D3452BB198060058D943 /* HomeViewControllerTests.swift */; };
 		04DC09672B9F7639008720BE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09662B9F7639008720BE /* DetailsViewController.swift */; };
 		04DC09692B9F7928008720BE /* Double+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC09682B9F7928008720BE /* Double+ToString.swift */; };
 		04DC096B2B9F86A8008720BE /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC096A2B9F86A8008720BE /* WeatherInfo.swift */; };
@@ -73,6 +74,7 @@
 		04C0D3392BB18EF50058D943 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04C0D33C2BB1900E0058D943 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		04C0D33E2BB190DC0058D943 /* AppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchTests.swift; sourceTree = "<group>"; };
+		04C0D3452BB198060058D943 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		04DC09662B9F7639008720BE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		04DC09682B9F7928008720BE /* Double+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ToString.swift"; sourceTree = "<group>"; };
 		04DC096A2B9F86A8008720BE /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				04C0D33E2BB190DC0058D943 /* AppLaunchTests.swift */,
+				04C0D3422BB195780058D943 /* ViewControllers */,
 				04C0D33B2BB18F810058D943 /* Application Delegates */,
 				04C0D3352BB187100058D943 /* Presenntation */,
 				045E853B2B9F48E20050A10A /* Main.storyboard */,
@@ -271,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				04C0D3372BB187410058D943 /* HomeViewModelTests.swift */,
+				04C0D3452BB198060058D943 /* HomeViewControllerTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -281,6 +285,13 @@
 				04C0D33C2BB1900E0058D943 /* TestingAppDelegate.swift */,
 			);
 			path = "Application Delegates";
+			sourceTree = "<group>";
+		};
+		04C0D3422BB195780058D943 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		04DC09652B9F7616008720BE /* Details */ = {
@@ -438,6 +449,7 @@
 			files = (
 				04C0D33D2BB1900E0058D943 /* TestingAppDelegate.swift in Sources */,
 				04C0D33F2BB190DC0058D943 /* AppLaunchTests.swift in Sources */,
+				04C0D3462BB198060058D943 /* HomeViewControllerTests.swift in Sources */,
 				04C0D3382BB187410058D943 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
