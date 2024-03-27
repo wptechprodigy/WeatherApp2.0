@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var getWeatherInfoButton: UIButton!
     
+    @IBOutlet weak var label: UILabel!
+    
     // MARK: -
     
     var viewModel: HomeViewModel!

@@ -42,4 +42,3 @@ class APIManager: APIManagerProtocol {
         }
     }
 }
-
